@@ -1,0 +1,60 @@
+/* assets/css/task.css */
+
+/* --- FORM CARD --- */
+/* Renamed from .container to .form-card to avoid conflict with main.css */
+.form-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 850px; 
+    margin: 0 auto;   
+    position: relative; /* Ensures it sits correctly in the flow */
+}
+
+/* Headings inside form */
+.form-card h3 {
+    color: #1e3a8a;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* Labels */
+.form-label {
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 6px;
+    display: block;
+    font-size: 14px;
+}
+
+/* Inputs */
+.form-control {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    transition: all 0.2s ease;
+}
+
+.form-control:focus {
+    border-color: #2563eb;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.mb-3 { margin-bottom: 18px; }
+
+/* Form Buttons */
+.d-flex { display: flex; }
+.justify-content-between { justify-content: space-between; }
+.align-items-center { align-items: center; }
+.mt-4 { margin-top: 1.5rem; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .form-card {
+        padding: 20px;
+    }
+}

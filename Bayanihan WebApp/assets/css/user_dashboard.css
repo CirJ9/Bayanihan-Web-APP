@@ -1,0 +1,74 @@
+/* DASHBOARD CONTENT SPECIFIC STYLES ONLY */
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    flex: 1;
+    min-width: 240px;
+    height: 160px;
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover { transform: translateY(-5px); }
+.card h3 { font-size: 16px; color: #777; margin-bottom: 10px; }
+.card h2 { font-size: 28px; color: #1e3a8a; }
+
+/* Dashboard Content Split */
+.content-2 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.ranking, .helpers {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.ranking { flex: 2; }
+.helpers { flex: 1; }
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Tables */
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 12px; text-align: left; border-bottom: 1px solid #eee; }
+th { background: #f7f7f7; color: #555; }
+td img { width: 35px; height: 35px; border-radius: 50%; object-fit: cover; }
+
+/* Buttons inside dashboard */
+.btn {
+    background: #f1f1f1;
+    color: #1e3a8a;
+    padding: 7px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.btn:hover { background: #e2e8f0; }
+
+@media screen and (max-width: 768px) {
+    .content-2 { flex-direction: column; }
+}
